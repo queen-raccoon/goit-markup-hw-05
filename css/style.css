@@ -348,8 +348,17 @@ button:focus {
 }
 
 .section-menu-item {
-    background: #F4F4FD;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 112px;
+
+    background-color: #F4F4FD;
+    
+    border-radius: 4px;
+
     margin-bottom: 8px;
+
 }
 
 .section-menu-icon {
