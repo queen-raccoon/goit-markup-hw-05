@@ -90,8 +90,6 @@ button:focus {
 /* ======== index.html ========= */
 /*======== HEADER ========*/
 .page-header {
-    /* display: flex;
-    align-items: center; */
     border-bottom: 1px solid #e7e9fc;
 }
 
@@ -163,8 +161,13 @@ button:focus {
 /*======== /HEADER ========*/
 
 /* ------ main ------ */ 
+
 .main-hero-image {
     background-color: var(--second-text-color);
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+     url(../images/people-office.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
     padding: 188px 0;
     text-align: center;
 }
@@ -198,7 +201,7 @@ button:focus {
 
 .main-btm-text {
     color: #FFFFFF;
-    font-weight: 500;
+    font-weight: 500px;
 }
 
 .list-distination {
@@ -232,6 +235,29 @@ button:focus {
 .section-text {
     font-size: 16px;
     font-weight: 400;
+    margin-bottom: 8px;
+}
+
+.social-list{
+    display: flex;
+    justify-content: center;
+    column-gap: 24px;
+}
+
+.social-list-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #4D5AE5;
+    fill: #f4f4fd;
+}
+
+.social-list-link:hover,
+.social-list-link:focus {
+    background: #31D0AA;
 }
 
 .main-title-wawd {
@@ -264,6 +290,20 @@ button:focus {
     flex-basis: calc((100% - 72px) / 4);
 }
 
+.social-list-background {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 16px 32px;
+    fill: #8E8F99;
+    border: 1px solid #8E8F99;
+    border-radius: 4px;
+}
+
+.social-list-background:hover {
+    fill: var(--acsent-color);
+    border: 1px solid var(--acsent-color);
+}
 /* ------ /main ------ */
 
 /*======== FOOTER ========*/
@@ -273,7 +313,7 @@ button:focus {
     letter-spacing: 0.02em;
     color: #F4F4FD;
     width: 264px;
-    /* margin-top: 18px; */
+    /* margin-bottom: 16px; */
 }
 
 .page-footer {
@@ -284,6 +324,28 @@ button:focus {
 .logo-link {
     display: inline-block;
     margin-bottom: 16px;
+}
+
+.social-list-link-footer{
+    column-gap: 16px;
+    justify-content: left;
+}
+
+.footer-block {
+    display: flex;
+}
+
+.footer-logo-description{
+    margin-right: 120px;
+}
+
+.section-menu-item {
+    background: #F4F4FD;
+    margin-bottom: 8px;
+}
+
+.section-menu-icon {
+    margin: 24px 100px;
 }
 /*======== /FOOTER ========*/
 /* ======== /index.html ======== */
