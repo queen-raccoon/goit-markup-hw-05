@@ -262,7 +262,7 @@ button:focus {
 }
 
 .social-list-link-dark-bg:hover,
-.social-lict-link-dark-bg:focus {
+.social-list-link-dark-bg:focus {
     background-color: #31D0AA;
 }
 
@@ -304,7 +304,8 @@ button:focus {
     justify-content: center;
     align-items: center;
     width: 100%;
-    padding: 16px 32px;
+    height: 100%;
+    /* padding: 16px 32px; */
     color: #8e8f99;
     border: 1px solid #8e8f99;
     border-radius: 4px;
