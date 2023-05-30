@@ -166,6 +166,8 @@ button:focus {
 
 .main-hero-image {
     max-width: 1440px;
+    height: 600px;
+    margin: 0 auto;
     background-color: var(--second-text-color);
     background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
      url(../images/people-office.jpg);
@@ -234,6 +236,9 @@ button:focus {
 .section-text {
     font-size: 16px;
     font-weight: 400;
+}
+
+.section-text-margin {
     margin-bottom: 8px;
 }
 
