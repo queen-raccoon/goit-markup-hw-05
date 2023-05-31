@@ -404,12 +404,6 @@ button:focus {
 /* ======== portfolio.html ======== */
 /* ------ main ------ */
 
-.menu-portfolio-btn {
-    transition: color var(--transition-duration-and-funk),
-        background-color var(--transition-duration-and-funk),
-        border-color var(--transition-duration-and-funk),
-        box-shadow var(--transition-duration-and-funk);
-}
 
 .portfolio-menu {
     font-weight: 500;
@@ -420,6 +414,10 @@ button:focus {
     background: #F4F4FD;
     border: 1px solid #E7E9FC;
     border-radius: 4px;
+    transition: color var(--transition-duration-and-funk),
+        background-color var(--transition-duration-and-funk),
+        border-color var(--transition-duration-and-funk),
+        box-shadow var(--transition-duration-and-funk);
 }
 
 .portfolio-menu:hover,
