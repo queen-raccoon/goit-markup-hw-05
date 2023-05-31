@@ -5,6 +5,7 @@
     --main-font-family: 'Roboto', sans-serif;
     --second-font-family: 'Raleway', sans-serif;
     --line-height-family: 1.5;
+    --transition-duration-and-funk: 250ms cubic-bezier(0.4, 0, 0.2, 1); 
 }
 
 .list {
@@ -63,7 +64,7 @@ span {
 button {
     cursor: pointer;
     line-height: var(--line-height-family);
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color var(--transition-duration-and-funk);
 }
 
 button:hover,
@@ -134,7 +135,7 @@ button:focus {
     font-weight: 500;
     font-size: 16px;
     letter-spacing: 0.02em;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: color var(--transition-duration-and-funk);
 }
 
 .menu-link:hover,
@@ -155,7 +156,7 @@ button:focus {
     font-weight: 400;
     font-size: 16px;
     letter-spacing: 0.02em;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: color var(--transition-duration-and-funk);
 }
 
 .contact-mail-tel:hover,
@@ -247,7 +248,6 @@ button:focus {
 .social-list{
     display: flex;
     justify-content: center;
-    /* column-gap: 24px; */
     gap: 24px;
 }
 
@@ -260,7 +260,7 @@ button:focus {
     border-radius: 50%;
     background-color: #4D5AE5;
     fill: #f4f4fd;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color var(--transition-duration-and-funk);
 }
 
 .social-list-link:hover,
@@ -269,7 +269,7 @@ button:focus {
 }
 
 .social-list-link-dark-bg{
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color var(--transition-duration-and-funk);
 }
 
 .social-list-link-dark-bg:hover,
@@ -319,8 +319,8 @@ button:focus {
     color: #8e8f99;
     border: 1px solid #8e8f99;
     border-radius: 4px;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-        border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: color var(--transition-duration-and-funk),
+        border var(--transition-duration-and-funk);
 }
 
 .social-list-background:hover,
@@ -346,7 +346,6 @@ button:focus {
     letter-spacing: 0.02em;
     color: #F4F4FD;
     width: 264px;
-    /* margin-bottom: 16px; */
 }
 
 .main-btm-text {
@@ -365,7 +364,6 @@ button:focus {
 }
 
 .social-list-link-footer{
-    /* column-gap: 16px; */
     gap: 16px;
     justify-content: left;
 }
@@ -412,10 +410,10 @@ button:focus {
     background: #F4F4FD;
     border: 1px solid #E7E9FC;
     border-radius: 4px;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-        color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-        border 250ms cubic-bezier(0.4, 0, 0.2, 1),
-        box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color var(--transition-duration-and-funk),
+        color var(--transition-duration-and-funk),
+        border var(--transition-duration-and-funk),
+        box-shadow var(--transition-duration-and-funk);
 }
 
 .portfolio-menu:hover,
@@ -460,7 +458,7 @@ button:focus {
 
 .gallery-list {
     display: block;
-    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: box-shadow var(--transition-duration-and-funk);
 }
 
 .gallery-list:hover,
@@ -468,6 +466,34 @@ button:focus {
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 
         0px 1px 1px rgba(46, 47, 66, 0.16), 
         0px 2px 1px rgba(46, 47, 66, 0.08);
+}
+
+.gallery-box {
+    position: relative;
+    overflow: hidden;
+}
+
+.overlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    color: #F4F4FD;
+    background-color: #4D5AE5;;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+    padding: 40px 32px 0 32px;
+    overflow: auto;
+    transform: translate(0px, 100%);
+    transition: transform var(--transition-duration-and-funk);
+}
+
+.gallery-list:hover .overlay,
+.gallery-list:focus .overlay {
+    transform: translate(0px, 0%);
 }
 /* ------ /main ------ */
 /* ======== /portfolio.html ======== */
