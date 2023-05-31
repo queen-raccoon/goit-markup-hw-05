@@ -405,8 +405,8 @@ button:focus {
 /* ------ main ------ */
 
 .menu-portfolio-btn {
-    transition: background-color var(--transition-duration-and-funk),
-        color var(--transition-duration-and-funk),
+    transition: color var(--transition-duration-and-funk),
+        background-color var(--transition-duration-and-funk),
         border-color var(--transition-duration-and-funk),
         box-shadow var(--transition-duration-and-funk);
 }
