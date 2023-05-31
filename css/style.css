@@ -420,10 +420,6 @@ button:focus {
     background: #F4F4FD;
     border: 1px solid #E7E9FC;
     border-radius: 4px;
-    /* transition: background-color var(--transition-duration-and-funk),
-        color var(--transition-duration-and-funk),
-        border var(--transition-duration-and-funk),
-        box-shadow var(--transition-duration-and-funk); */
 }
 
 .portfolio-menu:hover,
