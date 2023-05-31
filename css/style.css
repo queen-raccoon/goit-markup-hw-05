@@ -322,7 +322,7 @@ button:focus {
     border: 1px solid #8e8f99;
     border-radius: 4px;
     transition: color var(--transition-duration-and-funk),
-        border var(--transition-duration-and-funk);
+        border-color var(--transition-duration-and-funk);
 }
 
 .social-list-background:hover,
@@ -407,7 +407,7 @@ button:focus {
 .menu-portfolio-btn {
     transition: background-color var(--transition-duration-and-funk),
         color var(--transition-duration-and-funk),
-        border var(--transition-duration-and-funk),
+        border-color var(--transition-duration-and-funk),
         box-shadow var(--transition-duration-and-funk);
 }
 
@@ -573,9 +573,9 @@ button:focus {
 }
 
 .modal-close-btn:hover,
-.mmodal-close-btn:focus {
+.modal-close-btn:focus {
     border: none;
-    fill: #FFFFFF;
+    fill: #ffffff;
 }
 
 .modal-close-icon {
